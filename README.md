@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 # bigbawzy
 
 <!-- Lil Uzi Vert Official Website
+=======
+Lil Uzi Vert Official Website
+>>>>>>> 7aad7f5662b996ff054114145f4acba043151e1a
 
 This assignment project is to promote Lil Uzi Vert’s music, merchandise, tour dates, and background story. The website will provide fans with a central hub to explore his latest releases, watch music videos, purchase exclusive merchandise, and stay updated on upcoming tour dates. Through its clean design and dynamic content, the website ensures fans can engage with their favourite artist conveniently and intuitively.
 
@@ -62,4 +66,9 @@ Features Left to Implement
 2.	Search Functionality:
 •	Allow users to search for specific merchandise or music.
 3.	Dynamic Event Booking:
+<<<<<<< HEAD
 •	Integrate with third-party event ticketing platforms for direct concert ticket purchases. -->
+=======
+•	Integrate with third-party event ticketing platforms for direct concert ticket purchases.
+![image](https://github.com/user-attachments/assets/d8216f96-3c84-4580-a685-b97a7f27ae49)
+>>>>>>> 7aad7f5662b996ff054114145f4acba043151e1a
