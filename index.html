@@ -5,73 +5,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lil Uzi Vert Official Website</title>
     <style>
-        /* General Navigation Bar Styles */
-        /* General Navigation Bar Styles */
-/* General Navigation Bar Styles */
-header {
-    background-color: #b45f44; /* Matches the desired color */
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between; /* Separates content into left, center, and right sections */
-    align-items: center; /* Centers items vertically */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            font-family: Arial, sans-serif;
+        }
 
-/* Reset margin and padding for the entire page */
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Ensure padding and border are included in the width/height calculations */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
+        /* Header Styling */
+        header {
+            background-color: #b45f44;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
 
-/* Ensure sections span the full width */
-section {
-    width: 100%;
-}
+        /* Logo Styling */
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
 
-/* Navigation Content Wrapper */
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ensures proper spacing */
-    width: 100%; /* Makes the navigation span the full width of the header */
-}
+        /* Navigation Links */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex: 1;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
 
-/* Logo Section */
-.logo {
-    font-family: 'Georgia', serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    text-transform: lowercase; /* Matches the desired logo style */
-}
+        .nav-links li {
+            flex: 1; /* Spaces the links evenly */
+            text-align: center;
+        }
 
-/* Navigation Links */
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px; /* Adds spacing between navigation links */
-    margin: 0 auto; /* Centers the links in the middle of the nav bar */
-}
+        .nav-links .center {
+            flex: 2; /* Expands the "Tours" link to center it */
+        }
 
-.nav-links li {
-    display: inline-block;
-}
+        .nav-links a {
+            text-decoration: none;
+            font-family: 'Georgia', serif;
+            font-size: 16px;
+            color: #fff;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
 
-.nav-links a {
-    text-decoration: none;
-    font-family: 'Georgia', serif;
-    font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-}
+        .nav-links a:hover {
+            color: #000; /* Hover effect */
+        }
 
-.nav-links a:hover {
-    color: #000; /* Adds a hover effect */
-}
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+        }
 
+        /* Video Section */
+        #home {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #home video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #home .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Social Icons in the Sign-Up Section */
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            height: 30px;
+            filter: invert(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.gif" alt="Lil Uzi Vert Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="center"><a href="#tour">Tours</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#merch">Merch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="full-screen">
+        <video autoplay muted loop>
+            <source src="videos/home-banner.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <h2>Welcome to Lil Uzi Vert's World</h2>
+            <p>Music, merch, and more.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About</h2>
+        <p>Lil Uzi Vert is a groundbreaking artist blending hip-hop and rap with electrifying energy and unique style.</p>
+    </section>
+
+    <!-- Tour Section -->
+    <section id="tour">
+        <h2>Tour Dates</h2>
+        <ul>
+            <li>Jan 15, 2024 - New York City</li>
+            <li>Feb 20, 2024 - Los Angeles</li>
+            <li>Mar 10, 2024 - Chicago</li>
+        </ul>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music">
+        <h2>Music</h2>
+        <div class="music-carousel">
+            <div class="album">
+                <img src="images/album1.jpg" alt="Album 1">
+                <p>Eternal Atake</p>
+            </div>
+            <div class="album">
+                <img src="images/album2.jpg" alt="Album 2">
+                <p>LUV Is Rage 2</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merch Section -->
+    <section id="merch">
+        <h2>Store</h2>
+        <div class="merch-grid">
+            <div class="merch-item">
+                <img src="images/hoodie.jpg" alt="Hoodie">
+                <p>Exclusive Hoodie - $60</p>
+            </div>
+            <div class="merch-item">
+                <img src="images/tshirt.jpg" alt="T-Shirt">
+                <p>Signature T-Shirt - $40</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign Up Section -->
+    <section id="signup">
+        <h2>Join the Fan Club</h2>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+            <a href="#"><img src="images/spotify-icon.png" alt="Spotify"></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lil Uzi Vert. Follow us on social media.</p>
+    </footer>
+</body>
+</html>
